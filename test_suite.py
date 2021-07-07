@@ -1,9 +1,10 @@
 import unittest
 from HTMLReport import TestRunner
 from server_request import MyTestCase
-import os
-import sys
-sys.path.append(os.environ['WORKSPACE'])
+import os,sys
+dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(dir)
+sys.path.append("usr/local/bin/python3.9")
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()

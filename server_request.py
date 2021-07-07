@@ -1,9 +1,10 @@
 import unittest
 import requests
 from nose.tools import assert_true
-import os
-import sys
-sys.path.append(os.environ['WORKSPACE'])
+import os,sys
+dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(dir)
+sys.path.append("usr/local/bin/python3.9")
 
 
 class MyTestCase(unittest.TestCase):
