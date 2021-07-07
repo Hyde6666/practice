@@ -1,8 +1,22 @@
 import unittest
-
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
+from HTMLReport import TestRunner
+from server_request import MyTestCase
 
 if __name__ == '__main__':
+    suite = unittest.TestSuite()
+
+    # test case order
+    tests = [
+        MyTestCase("test_getskutree")
+    ]
+
+    suite.addTests(tests)
+
+    runner = TestRunner(
+        report_file_name="test_report",
+        output_path="reports",
+        title="测试报告",
+        description="check getskutree API", )
+
+    runner.run(suite)
     unittest.main()
