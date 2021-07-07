@@ -10,7 +10,7 @@ from nose.tools import assert_true
 
 class MyTestCase(unittest.TestCase):
     def test_getskutree(self):
-        page = requests.get('https://apptest.perfectcorp.com/service/V2/getSkuTreeByType?country=US&lang=en-US&makeupVer=38.0&platform=iOS&product=YouCam%20Makeup&skuFormatVer=4.0&type=blush&version=1.0&versiont')
+        page = requests.get('https://apptest.perfectcorp.com/service/V2/getSkuTreeByType?country=US&lang=en-US&makeupVer=38.0&platform=iOS&product=YouCam%20Makeup&skuFormatVer=4.0&type=blush&version=1.0&versiontype=for%20iOS')
         assert_true(page.ok)
         if page.status_code==200:
             print('getskutreeAPI is ok')
