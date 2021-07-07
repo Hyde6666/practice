@@ -1,6 +1,9 @@
 import unittest
 from HTMLReport import TestRunner
 from server_request import MyTestCase
+import os
+import sys
+sys.path.append(os.environ['WORKSPACE'])
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()

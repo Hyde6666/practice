@@ -1,7 +1,9 @@
 import unittest
 import requests
 from nose.tools import assert_true
-from HTMLReport import TestRunner
+import os
+import sys
+sys.path.append(os.environ['WORKSPACE'])
 
 
 class MyTestCase(unittest.TestCase):
