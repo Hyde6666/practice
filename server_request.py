@@ -4,7 +4,7 @@ from nose.tools import assert_true
 import os,sys
 dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(dir)
-sys.path.append("usr/local/bin/python3.9")
+sys.path.append("/usr/local/lib/python3.9/site-packages")
 
 
 class MyTestCase(unittest.TestCase):
