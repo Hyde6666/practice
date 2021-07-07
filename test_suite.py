@@ -1,10 +1,11 @@
-import unittest
-from HTMLReport import TestRunner
-from server_request import MyTestCase
 import os,sys
 dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(dir)
 sys.path.append("/Users/hyde/Y4B_autotest/venv/lib/python3.9/site-packages")
+import unittest
+from HTMLReport import TestRunner
+from server_request import MyTestCase
+
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
