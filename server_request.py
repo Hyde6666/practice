@@ -1,11 +1,10 @@
 import os,sys
 dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(dir)
-sys.path.append("/Users/hyde/Y4B_autotest/venv/lib/python3.9/site-packages")
+sys.path.append("/Users/hyde/practice/venv/lib/python3.9/site-packages")
 import unittest
 import requests
 from nose.tools import assert_true
-
 
 
 class MyTestCase(unittest.TestCase):
