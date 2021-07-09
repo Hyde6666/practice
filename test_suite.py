@@ -20,8 +20,10 @@ if __name__ == '__main__':
     runner = TestRunner(
         report_file_name="test_report",
         output_path="reports",
-        title="测试报告",
-        description="check getskutree API", )
+        title="Test Report",
+        description="check getskutree API",
+        lang="en"
+        )
 
     runner.run(suite)
     unittest.main()
